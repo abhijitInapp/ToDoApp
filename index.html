@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    
+    <div class="header">
+        <h1>TO DO APP</h1>
+        <button id="addTaskBtn">Add Task</button>
+      </div>
+      <div id="addTaskPopup" class="popup">
+        <div class="popup-content">
+          <span id = "close-button" class="close">&times;</span>
+          <h2>Add Task</h2>
+          <form id="addTaskForm">
+            <label for="taskName">Task Name:</label>
+            <input type="text" id="taskName" name="taskName">
+            <label for="taskDetails">Task Details:</label>
+            <textarea id="taskDetails" name="taskDetails"></textarea>
+            <button id = "submit-button" type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+      <div id="editTaskPopup" class="popup">
+        <div class="popup-content">
+          <span id = "close-edit-button" class="close">&times;</span>
+          <h2>Add Task</h2>
+          <form id="editTaskForm">
+            <label for="taskName">Task Name:</label>
+            <input type="text" id="editTaskName" name="taskName">
+            <label for="taskDetails">Task Details:</label>
+            <textarea id="editTaskDetails" name="taskDetails"></textarea>
+            <button id = "submit-button" type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+      <div class="app-container">
+        <div class="column1" id="todo-column">
+          <div class="todo-txt">To Do</div>
+          <ul class="task-list" id="todo-list">
+            
+          </ul>
+        </div>
+        <div class="column2" id="in-progress-column">
+          <div class="todo-txt">In Progress</div>
+          <ul class="task-list" id="in-progress-list">
+
+          </ul>
+        </div>
+        <div class="column3" id="completed-column">
+          <div class="todo-txt">Completed</div>
+          <ul class="task-list" id="completed-list">
+
+          </ul>
+        </div>
+        
+      </div>
+      <script src="app.js"></script>
+</body>
+</html>
